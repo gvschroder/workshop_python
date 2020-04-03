@@ -8,7 +8,7 @@ def bitwise_operators_vs_logical_operators():
     if (x is not None) & (x > 5):
         print('Bitwise: Não nulo e maior que 5')
 
-    x = 1
+    x = None
     if (x is None) or ((x + 1) == 2):
         print('Logical: Nulo ou X + 1 == 2')
 
@@ -39,6 +39,6 @@ def any_all():
 
 
 if __name__ == '__main__':
-    # bitwise_operators_vs_logical_operators()
+    bitwise_operators_vs_logical_operators()
     # relational_operators()
-    any_all()
+    # any_all()

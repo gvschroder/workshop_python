@@ -39,6 +39,7 @@ def tipos():
     # Slice Type
     fatia = slice(0, 2)
     print("01/01/2020"[fatia])
+    print("01/01/2020"[0:2])
 
     # Boolean Type
     bool = True  # False
@@ -50,7 +51,7 @@ def tipos():
     print("Guilherme".encode())
     print(bytes('Guilherme', 'utf-8'))
 
-    # bytearray0 - 255
+    # bytearray 0 - 255
     x = bytearray(3)
     print(x)
     x[0] = 71  # G

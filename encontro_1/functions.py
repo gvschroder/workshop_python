@@ -11,7 +11,17 @@ def function_args(nome, idade, sobrenome):
 def function_args_default(nome='', idade=0, sobrenome=''):
     print(f'Nome Completo: {nome} {sobrenome}, Idade: {idade}')
 
-
+"""
+Armadilha dos argumentos com valor default
+Nome:  Schroder
+Idade: 1
+Contatos: {'1_tel': '15 981145866', '1_email': 'gvschroder@gmail.com'}
+Metas: ['Fazer uma viagem para Alemanha', 'Conhecer a Nasa', 'Comprar uma cadeita Gamer']
+Nome:  Schroder
+Idade: 1
+Contatos: {'1_tel': '15 981145866', '1_email': 'gvschroder@gmail.com', '2_email': 'gvschroder@gmail.com'}
+Metas: ['Fazer uma viagem para Alemanha', 'Conhecer a Nasa', 'Comprar uma cadeita Gamer', 'Conhecer a Nasa', 'Comprar uma cadeita Gamer']
+"""
 def function_args_default_trap(
         nome='',
         idade=0,
@@ -67,7 +77,7 @@ if __name__ == '__main__':
     function_args(idade=28, nome='Guilherme', sobrenome='Schröder')
 
     print('\nArgumentos posicionais e nomeados')
-    function_args('Guilherme', idade=28, sobrenome='Schröder')
+    function_args('Guilherme', sobrenome='Schröder', idade=28)
 
     print('\nArgumentos por lista/tupla')
     t_args = ('Itararé', 'Sensei', 28)
@@ -88,8 +98,8 @@ if __name__ == '__main__':
 
     print('\nArmadilha dos argumentos com valor default')
     function_args_default_trap()
-    function_args_default_trap()
+    function_args_default_trap(contantos={}, metas=[])
 
-    print('\n Solução: Armadilha dos argumentos com valor default')
+    print('\nSolução: Armadilha dos argumentos com valor default')
     function_args_default_trap_fix()
     function_args_default_trap_fix()

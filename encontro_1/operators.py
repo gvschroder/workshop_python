@@ -120,10 +120,10 @@ def bitwise_operators():
 
 
 if __name__ == '__main__':
-    arithmetic_operators()
-    relational_operators()
-    logical_operators()
-    bitwise_operators()
+    # arithmetic_operators()
+    # relational_operators()
+    # logical_operators()
+    # bitwise_operators()
 
     """
     Assignment operators
